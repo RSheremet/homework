@@ -1,0 +1,72 @@
+.photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background: url("./image/itsMe.jpg") no-repeat center;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dedddd;
+}
+
+.message {
+    width: 375px;
+    margin-left: 35px;
+    box-shadow: 1px 1px 35px #00000029;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    background: #fff;
+}
+
+.time {
+    text-align: right;
+    padding-right: 21px;
+    margin-top: 15px;
+    color: #00000061;
+}
+
+.date {
+    color: #00000061;
+}
+
+.theMessage {
+    margin-top: 15px;
+}
+
+.message::before {
+ /*   content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: inherit;
+    background: inherit;
+    -webkit-box-shadow: inherit;
+    box-shadow: inherit;
+    z-index: -1;
+    top: -5px;
+    margin-left: -5px;
+    -webkit-transform: scaleX(0.6) rotate(45deg);
+    -ms-transform: scaleX(0.6) rotate(45deg);
+    transform: scaleX(0.6) rotate(45deg);*/
+    position: absolute;
+    content: "";
+    top: 210px;
+    transform: scaleY(0.5) rotate(45deg);
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    left: -11px;
+    box-shadow: -1px 11px 6px #00000008
+}
+
+.mesWrapper {
+    display: flex;
+    align-items: flex-end;
+}
