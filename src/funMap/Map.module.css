@@ -1,0 +1,23 @@
+.ordinary {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.red {
+    color: red;
+}
+
+.wrapperMap {
+    max-width: 415px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 86px;
+    margin-top: 15px;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import c from './Message.module.css';
 import Photo from "./Photo";
+import Map from "../funMap/Map";
 
 const Message = (props) => {
     return (
@@ -19,6 +20,7 @@ const Message = (props) => {
                     </div>
                 </div>
             </div>
+            <Map className={c.maps} />
         </div>
     )
 }
