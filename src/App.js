@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
-import Message from "./Message/Message";
-import Map from "./funMap/Map";
+import Form from "./Form/form";
+
 
 
 class App extends React.Component {
+
     render = () => {
         return (
             <div className="App">
-                <Message/>
+                <Form />
             </div>
         );
     }
