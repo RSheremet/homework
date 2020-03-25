@@ -1,23 +1,18 @@
 import React from 'react';
 import styles from './form.module.css';
+import Span from "./spanForForm";
+import Input from "./inputForForm";
 
 
 
 class Form extends React.Component {
 
-    state = {
-        spanNumber: 1,
-    }
-
-    number = React.createRef()
     inputAlert = React.createRef()
 
     increaseNumberAndAlert = () => {
-        this.setState({
-            spanNumber: this.state.spanNumber + 1
-        })
-        let todoAlert = this.inputAlert.current.value;
-        alert(todoAlert)
+        this.props.toClick()
+        let foralert = this.inputAlert.current.value
+        alert(foralert)
         this.inputAlert.current.value = ''
     }
 
@@ -25,8 +20,8 @@ class Form extends React.Component {
 
         return (
             <div className={styles.form}>
-                <span ref={this.number}>{this.state.spanNumber}</span>
-                <input type="text" placeholder="Напиши здесь" ref={this.inputAlert}/>
+                <Span num={this.props.state} result={this.increaseNumberAndAlert.toPlus}/>
+                <Input inputValue={this.props.state.inputValue} inputAlert={this.inputAlert} />
                 <button onClick={this.increaseNumberAndAlert}>Нажми на меня</button>
             </div>
         );
